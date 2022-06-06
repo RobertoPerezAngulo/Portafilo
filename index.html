@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<link rel="stylesheet" href="estilos.css">
+	<title>Jose Roberto Perez Angulo</title>
+</head>
+
+<body>
+
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<h1>Jose Roberto Perez Angulo</h1>
+				<p>Desarrollador . Net Core</p>
+				<p>Contáctame via Telefonica: (55) 91235924</p>
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">VW</a>
+				<a href="#">RH</a>
+				<a href="#">Seat</a>
+			</div>
+
+			<button onclick="fun()" type="button" class="btn btn-primary">Descarga CV de Roberto
+				Perez</button>
+		</header>
+
+		<section class="grid" id="grid">
+
+
+			<div class="item" data-categoria="rh" data-etiquetas="rh App RHContigo"
+				data-descripcion="H Contigo GAM es una aplicación para colaboradores de Grupo Autofin México.
+				Es una herramienta de productividad entre colaboradores, ayuda a mantener interacción mediante publicaciones, reconocimientos, validación de aptitudes y consulta de intereses personales, así mismo les ayuda a tener acceso a comunicaciones y servicios de autogestión más eficientes en procesos recurrentes que involucra el área de Recursos Humanos.">
+				<div class="item-contenido">
+					<img src="img/RH1.png" alt="">
+				</div>
+			</div>
+
+
+			<div class="item" data-categoria="rh" data-etiquetas="rh App RHContigo"
+				data-descripcion="Consumo de servicios RestApi Task Async.">
+				<div class="item-contenido">
+					<img src="img/RH2.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="rh" data-etiquetas="rh App RHContigo"
+				data-descripcion="Dimencion de imagenes.">
+				<div class="item-contenido">
+					<img src="img/RH3.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="seat" data-etiquetas="Seat Api Rest"
+				data-descripcion="La primera App que te permite comprar un SEAT sin contacto humano, desde donde te encuentres en el momento que sea. Se trata de una evolución en el mundo automotriz que te evita llamadas, te ofrece transparencia y seguridad en el proceso de compra, así como las garantías que hacen de SEAT una marca excepcional. Mudamos toda la sofisticación de nuestra marca al universo digital.">
+				<div class="item-contenido">
+					<img src="img/Seat1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="seat" data-etiquetas="Seat Api Rest"
+				data-descripcion="Consumo de ApiRest para la presentación de información">
+				<div class="item-contenido">
+					<img src="img/Seat2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="seat" data-etiquetas="Seat Api Rest"
+				data-descripcion="Base de datos entidad relación y cosumo de json">
+				<div class="item-contenido">
+					<img src="img/Seat3.png" alt="" class="zoom">
+				</div>
+			</div>
+
+
+
+
+			<div class="item" data-categoria="vw" data-etiquetas="vw App VW" data-descripcion="La primera App que te permite comprar un VOLKSWAGEN sin contacto humano, desde donde te encuentres en el momento que sea. Se trata de una evolución en el mundo automotriz que te evita llamadas, te ofrece transparencia y seguridad en el proceso de compra, así como las garantías que hacen de VOLKSWAGEN una marca excepcional. Mudamos toda la sofisticación de nuestra marca al universo digital.
+				 	">
+				<div class="item-contenido">
+					<img src="img/VW1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="vw" data-etiquetas="vw App VW" data-descripcion="Consumo de web api 
+				 	">
+				<div class="item-contenido">
+					<img src="img/VW3.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="vw" data-etiquetas="vw App VW" data-descripcion="Proceso de backend para la presentacion de información
+				 	">
+				<div class="item-contenido">
+					<img src="img/VW2.png" alt="">
+				</div>
+			</div>
+
+
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+
+	</div>
+
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
