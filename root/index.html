@@ -7,22 +7,26 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 	<link rel="stylesheet" href="estilos.css">
 	<title>Jose Roberto Perez Angulo</title>
 </head>
-
 <body>
-
 	<div class="contenedor">
 		<header>
 			<div class="logo">
-				<h1>Jose Roberto Perez Angulo</h1>
+				<h1 class="name">Jose Roberto Pérez Angulo</h1>
 				<p>Desarrollador . Net Core</p>
 				<p>Contáctame via Telefonica: (55) 91235924</p>
+				<a href="https://github.com/RobertoPerezAngulo" title="Optional link title">
+					<img alt="Image alt text"
+						 title="Optional image title"
+						 src="https://user-images.githubusercontent.com/30203863/71215319-517d2a80-22af-11ea-9ca8-206a2162c1cb.png"
+					/>
+				  </a>
+				<p>Abre mi git pegandole al avatar</p>
 			</div>
 			<form action="">
 				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
@@ -32,24 +36,24 @@
 				<a href="#">VW</a>
 				<a href="#">RH</a>
 				<a href="#">Seat</a>
+				<a href="#">Audi</a>
+				<a href="#">Mi mundo</a>
+			</div>
+			<div class="container-fluid">
+				<button onclick="fun()" type="button" class="btn btn-primary">Descarga CV de Roberto
+					Perez</button>
 			</div>
 
-			<button onclick="fun()" type="button" class="btn btn-primary">Descarga CV de Roberto
-				Perez</button>
 		</header>
 
 		<section class="grid" id="grid">
-
-
 			<div class="item" data-categoria="rh" data-etiquetas="rh App RHContigo"
-				data-descripcion="H Contigo GAM es una aplicación para colaboradores de Grupo Autofin México.
+				data-descripcion="RH Contigo GAM es una aplicación para colaboradores de Grupo Autofin México.
 				Es una herramienta de productividad entre colaboradores, ayuda a mantener interacción mediante publicaciones, reconocimientos, validación de aptitudes y consulta de intereses personales, así mismo les ayuda a tener acceso a comunicaciones y servicios de autogestión más eficientes en procesos recurrentes que involucra el área de Recursos Humanos.">
 				<div class="item-contenido">
 					<img src="img/RH1.png" alt="">
 				</div>
 			</div>
-
-
 			<div class="item" data-categoria="rh" data-etiquetas="rh App RHContigo"
 				data-descripcion="Consumo de servicios RestApi Task Async.">
 				<div class="item-contenido">
@@ -83,9 +87,26 @@
 				</div>
 			</div>
 
+			<div class="item" data-categoria="audi" data-etiquetas="audi App"
+				data-descripcion="La primera App que te permite comprar un AUDI sin contacto humano, desde donde te encuentres en el momento que sea. Se trata de una evolución en el mundo automotriz que te evita llamadas, te ofrece transparencia y seguridad en el proceso de compra, así como las garantías que hacen de AUDI una marca excepcional. Mudamos toda la sofisticación de nuestra marca al universo digital.">
+				<div class="item-contenido">
+					<img src="img/audi1.png" alt="">
+				</div>
+			</div>
 
+			<div class="item" data-categoria="audi" data-etiquetas="audi App"
+				data-descripcion="La primera App que te permite comprar un AUDI sin contacto humano, desde donde te encuentres en el momento que sea. Se trata de una evolución en el mundo automotriz que te evita llamadas, te ofrece transparencia y seguridad en el proceso de compra, así como las garantías que hacen de AUDI una marca excepcional. Mudamos toda la sofisticación de nuestra marca al universo digital.">
+				<div class="item-contenido">
+					<img src="img/audi2.png" alt="">
+				</div>
+			</div>
 
-
+			<div class="item" data-categoria="audi" data-etiquetas="audi App"
+				data-descripcion="La primera App que te permite comprar un AUDI sin contacto humano, desde donde te encuentres en el momento que sea. Se trata de una evolución en el mundo automotriz que te evita llamadas, te ofrece transparencia y seguridad en el proceso de compra, así como las garantías que hacen de AUDI una marca excepcional. Mudamos toda la sofisticación de nuestra marca al universo digital.">
+				<div class="item-contenido">
+					<img src="img/audi3.png" alt="">
+				</div>
+			</div>
 			<div class="item" data-categoria="vw" data-etiquetas="vw App VW" data-descripcion="La primera App que te permite comprar un VOLKSWAGEN sin contacto humano, desde donde te encuentres en el momento que sea. Se trata de una evolución en el mundo automotriz que te evita llamadas, te ofrece transparencia y seguridad en el proceso de compra, así como las garantías que hacen de VOLKSWAGEN una marca excepcional. Mudamos toda la sofisticación de nuestra marca al universo digital.
 				 	">
 				<div class="item-contenido">
@@ -106,10 +127,12 @@
 					<img src="img/vw2.png" alt="">
 				</div>
 			</div>
-
-
 		</section>
 
+		<!-- <iframe width="50%" height="50%"  src="https://www.youtube.com/embed/CTazANzywSA?autoplay=1&controls=0&mute=0"
+			title="Soy ingeniero y estoy feliz de eso." frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe> -->
 		<section class="overlay" id="overlay">
 			<div class="contenedor-img">
 				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>

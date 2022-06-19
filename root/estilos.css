@@ -4,8 +4,10 @@
 	box-sizing: border-box;
 }
  
+
 body {
-	background: #f3f3f3;
+	background: #070707;
+	/* f3f3f3 */
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -33,7 +35,36 @@ header .logo {
 }
 
 header .logo p {
-	color: #9B9B9B;
+	color: #ffffff;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #ffff;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: -43px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    padding: 8px 9px;
+    font-size: 10px;
+    line-height: 1.428571;
+    border-radius: 59px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 header form {
@@ -69,7 +100,7 @@ header .categorias a {
 }
 
 header .categorias a.activo {
-	color: #000;
+    color: #337ab7;
 }
 
 /* ------------------------- */
