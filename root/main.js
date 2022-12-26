@@ -6,6 +6,7 @@ const grid = new Muuri('.grid', {
 
 function fun() {
 	var link = document.createElement('a');
+	//Nuevo metodo
 	link.href = 'https://github.com/RobertoPerezAngulo/Portafilo/raw/master/root/CV_JoseRobertoPerezAngulo_En.pdf';
 	link.download = 'file.pdf';
 	link.dispatchEvent(new MouseEvent('click'));
