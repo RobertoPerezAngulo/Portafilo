@@ -1,6 +1,11 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+
+  target: 'static',
+  router: {
+    base: '/Portafolio/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - Jose Roberto',
@@ -71,6 +76,7 @@ export default {
     }
   },
 
+  
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
