@@ -2,6 +2,7 @@
   "name": "Portafolio",
   "version": "1.0.0",
   "private": true,
+  "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
