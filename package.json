@@ -2,6 +2,8 @@
   "name": "Portafolio",
   "version": "1.0.0",
   "private": true,
+  "predeploy": "nuxt generate",
+  "deploy": "gh-pages -d dist",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -20,6 +22,7 @@
     "vuetify": "^2.6.10"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.12.3"
+    "@nuxtjs/vuetify": "^1.12.3",
+    "gh-pages": "^5.0.0"
   }
 }
