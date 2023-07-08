@@ -2,8 +2,6 @@
   "name": "Portafolio",
   "version": "1.0.0",
   "private": true,
-  "predeploy": "nuxt generate",
-  "deploy": "gh-pages -d dist",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
