@@ -14,7 +14,6 @@
     "core-js": "^3.25.3",
     "i18n": "^0.15.1",
     "nuxt": "^2.15.8",
-    "push-dir": "^0.4.1",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10",
@@ -22,6 +21,7 @@
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.3",
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "push-dir": "^0.4.1"
   }
 }
