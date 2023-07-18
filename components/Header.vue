@@ -63,15 +63,9 @@ export default {
     ],
   }),
   methods: {
-    gitHub() {
-      window.open('https://github.com/RobertoPerezAngulo', '_blank');
+    DescargaCV() {
+      window.open('/C_V_Jose_Roberto_Perez_Angulo.pdf', '_blank');
     },
-    DescargaCV(){
-      var link = document.createElement('a');
-      link.href = '/CV_JoseRobertoPerezAngulo_En.pdf';
-      link.download = 'file.pdf';
-      link.dispatchEvent(new MouseEvent('click'));
-    }
   }
 };
 </script>
