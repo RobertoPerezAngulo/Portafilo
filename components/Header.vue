@@ -2,17 +2,6 @@
   <div>
     <v-app-bar color="primary" dark>
       <v-container fluid>
-        <v-menu>
-          <template v-slot:activator="{ on }">
-            <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
-          </template>
-          <v-list>
-            <v-list-item v-for="(item, i) in items" :key="i">
-              <v-list-item-title> <nuxt-link :to="item.dir" class="black--text">{{ item.name
-              }}</nuxt-link></v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
         <v-tooltip bottom>
           <template v-slot:activator="{ on: tooltip }">
             <v-btn icon @click="gitHub()" v-on="{ ...tooltip}">
@@ -66,6 +55,9 @@ export default {
     DescargaCV() {
       window.open('/C_V_Jose_Roberto_Perez_Angulo.pdf', '_blank');
     },
+    gitHub() {
+      window.open('https://github.com/RobertoPerezAngulo', '_blank');
+    }
   }
 };
 </script>
