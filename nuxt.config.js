@@ -51,6 +51,11 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     treeShake: true,
+    defaultAssets:{
+      font :{
+        family:'Montserrat'
+      }
+    },
     theme: {
       dark: false,
       themes: {
