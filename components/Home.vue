@@ -13,6 +13,9 @@
                         </v-card-actions>
                     </v-card>
                 </v-col>
+                <v-col>
+                    <buttonControls/>
+                </v-col>
             </v-row>
         </v-container>
     </div>
@@ -51,7 +54,13 @@ export default {
                     title: 'SAS',
                     description: 'Desarrollé aplicaciones en Java para optimizar procesos de subasta.',
                     image: 'ruta/de/imagen2.png',
-                    link: 'https://proyecto2.com'
+                    link: 'https://subastasventura.com/SAS/subastaOnline.do'
+                },
+                {
+                    title: 'AUDI',
+                    description: 'Desarrollé core de servicios moviles para la marca AUDI.',
+                    image: 'ruta/de/imagen2.png',
+                    link: 'https://play.google.com/store/apps/details?id=com.dvalic.appaudiclase&hl=es&gl=US'
                 },
             ],
         };
