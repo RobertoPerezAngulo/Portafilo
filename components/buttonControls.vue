@@ -3,7 +3,7 @@
       <div class="d-flex ma-4 justify-space-around" style="width: 300px">
         <v-speed-dial :value="true" fixed right bottom direction="top" transition="slide-y-reverse-transition">
           <template v-slot:activator>
-            <v-btn v-model="dial" color="#ba0019" dark fab x-large class="pulse">
+            <v-btn v-model="dial" color="error" dark fab large class="pulse">
               <v-icon v-if="dial"> mdi-gesture-double-tap </v-icon>
               <v-icon v-else> mdi-account-circle </v-icon>
             </v-btn>
@@ -60,7 +60,7 @@
     },
     data: () => ({
       dial: true,
-      whatsappDescri: "Whatsapp",
+      whatsappDescri: "Comunicate conmigo por Whatsapp",
       cambiaTema: "Cambiar tema",
     }),
     methods: {

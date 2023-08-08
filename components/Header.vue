@@ -1,15 +1,7 @@
 <template>
   <div>
     <v-app-bar color="primary" dark>
-      <v-container fluid>
-        <v-tooltip bottom>
-          <template v-slot:activator="{ on: tooltip }">
-            <v-btn icon @click="gitHub()" v-on="{ ...tooltip}">
-              <v-icon>mdi-github</v-icon>
-            </v-btn>
-          </template>
-          <span>Visita mi gitHub, es gratis!</span>
-        </v-tooltip>
+      <v-container>
         <v-tooltip bottom>
           <template v-slot:activator="{ on: tooltip }">
             <v-btn icon @click="DescargaCV()" v-on="{ ...tooltip}">
@@ -17,6 +9,14 @@
             </v-btn>
           </template>
           <span>Descarga mi CV</span>
+        </v-tooltip>
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on: tooltip }">
+            <v-btn icon @click="gitHub()" v-on="{ ...tooltip}">
+              <v-icon>mdi-github</v-icon>
+            </v-btn>
+          </template>
+          <span>Visita mi gitHub, es gratis!</span>
         </v-tooltip>
       </v-container>
     </v-app-bar>

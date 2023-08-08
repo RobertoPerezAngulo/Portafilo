@@ -1,7 +1,12 @@
 <template>
     <div>
-        <v-container align-center>
-            <h1>Proyectos Destacados</h1>
+        <v-container>
+            <v-row>
+                <v-col cols="12" class="text-center">
+                    <h1>Proyectos Destacados</h1>
+                    <h3>José Roberto Pérez Angulo</h3>
+                </v-col>
+            </v-row>
             <v-row>
                 <v-col v-for="(project, index) in projects" :key="index" cols="12" md="4">
                     <v-card>
@@ -14,7 +19,7 @@
                     </v-card>
                 </v-col>
                 <v-col>
-                    <buttonControls/>
+                    <buttonControls />
                 </v-col>
             </v-row>
         </v-container>
