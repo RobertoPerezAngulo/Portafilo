@@ -44,8 +44,33 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // https://go.nuxtjs.dev/axios
+    '@nuxtjs/axios',
     '@nuxtjs/i18n',
+    '@nuxt/http',
   ],
+
+  axios: {
+    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+    proxy: true,
+    debug: true
+  },
+
+  http: {
+    baseURL: '"http://127.0.0.1:8000"', // Reemplaza con la URL de tu servidor o API
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:3000', // Reemplaza con el origen correcto
+      // Otras cabeceras CORS necesarias si es necesario
+    }
+  },
+
+  proxy: {
+    "/Seguridad":  `${process.env.DOMINIO}`
+  },
+
+  publicRuntimeConfig: {
+    DOMINIO: process.env.DOMINIO,
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

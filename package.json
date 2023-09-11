@@ -10,6 +10,8 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "@nuxt/http": "^0.6.4",
+    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/i18n": "^7.3.1",
     "core-js": "^3.25.3",
     "i18n": "^0.15.1",
