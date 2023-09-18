@@ -4,6 +4,7 @@
       <v-container align-center>
         <v-btn text="" to="/">Home</v-btn>
         <v-btn text="" to="/About">Registrados</v-btn>
+        <v-btn text="" to="/denuncia">Denuncia</v-btn>
         <v-btn color="red" rounded to="/contact">Contact</v-btn>
         <v-tooltip bottom>
           <template v-slot:activator="{ on: tooltip }">
@@ -68,6 +69,7 @@ export default {
     return {
       footerMenus: [
         {
+          itemsAbout:[],
           title: 'Portafolio',
           items: [
             { text: 'Inicio', icon: 'mdi-home', to: '/' },
